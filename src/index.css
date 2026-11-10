@@ -4,12 +4,16 @@
 
 @layer base {
   body {
-    @apply bg-ivory text-ink font-sans antialiased;
+    @apply bg-white text-ink font-sans antialiased;
   }
   h1, h2, h3 {
     @apply font-serif;
   }
 }
+
+html { scroll-behavior: smooth; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* Scroll reveal */
 .reveal {
